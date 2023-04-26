@@ -5,6 +5,10 @@ ZAWS_LOCATION="$HOME/Library/Application Support/bin-zaws"
 if [ ! -d "$ZAWS_LOCATION" ]; then
   # If directory does not exist we first try cloning via ssh, otherwise fallback to https.
   git clone git@github.com:zerapix/bin-zaws.git "$ZAWS_LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$ZAWS_LOCATION"
+else
+  git -C "$ZAWS_LOCATION" reset .
+  git -C "$ZAWS_LOCATION" checkout .
+  git -C "$ZAWS_LOCATION" pull origin main
 fi
 
 # Execute install script
