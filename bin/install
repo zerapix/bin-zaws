@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+# Ensure we are on latest version of poetry
+poetry self update
+
+# We use `3.9` explicitly for now.
+poetry env use 3.9
+
+# Ensure we have latest version of dependencies (ie: `zaws` library)
+poetry -C "$SCRIPT_DIR/.." update
+
+# Link easy execute bin/script into a place that should make it visible on PATH
+# (same place that 'poetry' links its bin/script into)
+ln -sfh "$SCRIPT_DIR/bin/zaws" ~/.local/bin/zaws
