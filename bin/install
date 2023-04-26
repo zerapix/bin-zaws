@@ -2,10 +2,16 @@
 
 SCRIPT_DIR=$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
+echo "Pulling latest bin-zaws..."
+git -C "$SCRIPT_DIR/.." reset "$SCRIPT_DIR/../poetry.lock"
+git -C "$SCRIPT_DIR/.." checkout "$SCRIPT_DIR/../poetry.lock"
 git -C "$SCRIPT_DIR/.." pull origin main
 
 # Ensure we are on latest version of poetry
+echo "Self update poetry..."
 poetry self update
+
+echo "Install "
 
 # We use `3.9` explicitly for now.
 poetry env use 3.9
