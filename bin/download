@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOCATION="~/Library/Application Support/bin-zaws"
+LOCATION="$HOME/Library/Application Support/bin-zaws"
 
 # Try cloning via ssh first, otherwise fallback to https.
 git clone git@github.com:zerapix/bin-zaws.git "$LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$LOCATION"

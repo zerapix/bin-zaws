@@ -13,4 +13,4 @@ poetry -C "$SCRIPT_DIR/.." update
 
 # Link easy execute bin/script into a place that should make it visible on PATH
 # (same place that 'poetry' links its bin/script into)
-ln -sfh "$SCRIPT_DIR/bin/zaws" ~/.local/bin/zaws
+ln -sfh "$SCRIPT_DIR/zaws" ~/.local/bin/zaws

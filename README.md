@@ -10,5 +10,5 @@
 Run this on your terminal:
 
 ```shell
-curl -sSL ... TODO: Finish
+curl -sSL https://raw.githubusercontent.com/zerapix/bin-zaws/main/bin/download | bash
 ```
