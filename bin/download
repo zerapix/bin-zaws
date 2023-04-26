@@ -2,8 +2,10 @@
 
 LOCATION="$HOME/Library/Application Support/bin-zaws"
 
-# Try cloning via ssh first, otherwise fallback to https.
-git clone git@github.com:zerapix/bin-zaws.git "$LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$LOCATION"
+if [ ! -d "/path/to/dir" ]; then
+  # If directory does not exist we first try cloning via ssh, otherwise fallback to https.
+  git clone git@github.com:zerapix/bin-zaws.git "$LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$LOCATION"
+fi
 
 # Execute install script
 "$LOCATION/bin/install"
