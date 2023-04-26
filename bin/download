@@ -1,11 +1,11 @@
 #!/bin/bash
 
-LOCATION="$HOME/Library/Application Support/bin-zaws"
+ZAWS_LOCATION="$HOME/Library/Application Support/bin-zaws"
 
-if [ ! -d "/path/to/dir" ]; then
+if [ ! -d "$ZAWS_LOCATION" ]; then
   # If directory does not exist we first try cloning via ssh, otherwise fallback to https.
-  git clone git@github.com:zerapix/bin-zaws.git "$LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$LOCATION"
+  git clone git@github.com:zerapix/bin-zaws.git "$ZAWS_LOCATION" || git clone https://github.com/zerapix/bin-zaws.git "$ZAWS_LOCATION"
 fi
 
 # Execute install script
-"$LOCATION/bin/install"
+"$ZAWS_LOCATION/bin/install"
