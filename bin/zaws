@@ -2,7 +2,7 @@
 # Executes 'zaws' for you, no matter what folder your in.
 
 # Execute python manage script under poetry managed virtual environment.
-SCRIPT_DIR=$( cd -P "$( dirname $(readlink -f "${BASH_SOURCE[0]}" ) )" && pwd )
+SCRIPT_DIR=$( cd -P "$( dirname "$(readlink -f "${BASH_SOURCE[0]}" )" )" && pwd )
 
 if [ "$#" = "1" ] && [ "$1" = "self-update" ] ; then
   echo "Self Updating via bin-zaws install script..."

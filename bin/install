@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$( cd -P "$( dirname $(readlink -f "${BASH_SOURCE[0]}" ) )" && pwd )
+SCRIPT_DIR=$( cd -P "$( dirname "$(readlink -f "${BASH_SOURCE[0]}" )" )" && pwd )
 
 echo "Detected Script Dir At: $SCRIPT_DIR"
 
