@@ -366,14 +366,14 @@ typing-inspect = ">=0,<1"
 
 [[package]]
 name = "zaws"
-version = "1.0.0"
+version = "1.1.1"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<3.10"
 files = [
-    {file = "zaws-1.0.0-py3-none-any.whl", hash = "sha256:c052b99c94d0ce3d434059f87d77adcd998867435bbdafb307d9afd2fe27a5ce"},
-    {file = "zaws-1.0.0.tar.gz", hash = "sha256:e15a293f46ef57523d804954b80e7b3f0405410aa2d0f53edbc57b6dfc56b249"},
+    {file = "zaws-1.1.1-py3-none-any.whl", hash = "sha256:7e14366d16e93a6117f24617fef3a0ca8d72c52ea025962a6079edfc8ac996b4"},
+    {file = "zaws-1.1.1.tar.gz", hash = "sha256:83d2616bb0d0320785358f2fba2cd4f3f3ada37de2403faa3ab280ddf5213a38"},
 ]
 
 [package.dependencies]
@@ -436,4 +436,4 @@ reference = "fury"
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.9"
-content-hash = "b2cea5522d2a68241aa94b64dbd2a665af58511bb4ca77fdf6e7a6c20859fe2f"
+content-hash = "bdcb4c8886b774271fcc0c077c6fe8305a59b8fd55627210537776936612f301"
