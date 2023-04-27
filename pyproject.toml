@@ -12,6 +12,12 @@ name = "fury"
 python = "~3.9"
 pip = "*"
 zaws = {version=">=1.1.1", source="fury"}
+zsetup = "^1.6.0"
+zlogging = "^1.4.0"
+
+[tool.poetry.scripts]
+# command_name = module_for_handler : function_for_handler
+zaws = 'zaws_wrapper:wrapper_main'
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

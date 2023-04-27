@@ -249,14 +249,14 @@ files = [
 
 [[package]]
 name = "tomlkit"
-version = "0.11.7"
+version = "0.11.8"
 description = "Style preserving TOML library"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "tomlkit-0.11.7-py3-none-any.whl", hash = "sha256:5325463a7da2ef0c6bbfefb62a3dc883aebe679984709aee32a317907d0a8d3c"},
-    {file = "tomlkit-0.11.7.tar.gz", hash = "sha256:f392ef70ad87a672f02519f99967d28a4d3047133e2d1df936511465fbb3791d"},
+    {file = "tomlkit-0.11.8-py3-none-any.whl", hash = "sha256:8c726c4c202bdb148667835f68d68780b9a003a9ec34167b6c673b38eff2a171"},
+    {file = "tomlkit-0.11.8.tar.gz", hash = "sha256:9330fc7faa1db67b541b28e62018c17d20be733177d290a13b24c62d1614e0c3"},
 ]
 
 [[package]]
@@ -366,14 +366,14 @@ typing-inspect = ">=0,<1"
 
 [[package]]
 name = "zaws"
-version = "1.1.1"
+version = "1.2.2"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<3.10"
 files = [
-    {file = "zaws-1.1.1-py3-none-any.whl", hash = "sha256:7e14366d16e93a6117f24617fef3a0ca8d72c52ea025962a6079edfc8ac996b4"},
-    {file = "zaws-1.1.1.tar.gz", hash = "sha256:83d2616bb0d0320785358f2fba2cd4f3f3ada37de2403faa3ab280ddf5213a38"},
+    {file = "zaws-1.2.2-py3-none-any.whl", hash = "sha256:6220fc14991dd023748e840486bc23acdda3e2a49213275e347e2216cb84a5c4"},
+    {file = "zaws-1.2.2.tar.gz", hash = "sha256:35c7c5b5701afc4408e716755ab4470ff34e9a9f8ab4311e63b9a148f6bcf605"},
 ]
 
 [package.dependencies]
@@ -436,4 +436,4 @@ reference = "fury"
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.9"
-content-hash = "bdcb4c8886b774271fcc0c077c6fe8305a59b8fd55627210537776936612f301"
+content-hash = "05198e58160f7b90ad9cfea0a6a62a7105fbadd6976bf920a71eef841540c18f"
