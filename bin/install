@@ -7,7 +7,7 @@ echo "Detected Script Dir At: $SCRIPT_DIR"
 echo "Pulling latest bin-zaws..."
 git -C "$SCRIPT_DIR/.." reset "$SCRIPT_DIR/../poetry.lock"
 git -C "$SCRIPT_DIR/.." checkout "$SCRIPT_DIR/../poetry.lock"
-git -C "$SCRIPT_DIR/.." pull origin main
+git -C "$SCRIPT_DIR/.." pull -f origin main
 
 # Ensure we are on latest version of poetry
 echo "Self update poetry..."
