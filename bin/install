@@ -21,6 +21,8 @@ poetry -C "$SCRIPT_DIR/.." env use 3.9
 # Ensure we have latest version of dependencies (ie: `zaws` library)
 poetry -C "$SCRIPT_DIR/.." update
 
+poetry -C "$SCRIPT_DIR/.." install
+
 # Link easy execute bin/script into a place that should make it visible on PATH
 # (same place that 'poetry' links its bin/script into)
 ln -sfh "$SCRIPT_DIR/zaws" ~/.local/bin/zaws
