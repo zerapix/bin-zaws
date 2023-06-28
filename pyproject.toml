@@ -5,15 +5,20 @@ description = ""
 authors = ["Josh Orr <joshj@orr.blue>"]
 
 [[tool.poetry.source]]
-url = "https://pypi.fury.io/zerapix"
 name = "fury"
+url = "https://pypi.fury.io/zerapix"
+priority = "explicit"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "default"
 
 [tool.poetry.dependencies]
 python = "~3.9"
 pip = "*"
 zaws = {version=">=1.1.1", source="fury"}
-zsetup = "^1.6.0"
-zlogging = "^1.4.0"
+zlogging = {source="fury", version="^1.4.0"}
+zsetup = {source="fury", version="^1.6.0"}
 
 [tool.poetry.scripts]
 # command_name = module_for_handler : function_for_handler
