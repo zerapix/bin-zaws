@@ -14,9 +14,9 @@ name = "PyPI"
 priority = "default"
 
 [tool.poetry.dependencies]
-python = "~3.9"
+python = "^3.11"
 pip = "*"
-zaws = {version=">=1.1.1", source="fury"}
+zaws = {version=">=1.9.0", source="fury"}
 zlogging = {source="fury", version="^1.4.0"}
 zsetup = {source="fury", version="^1.6.0"}
 
