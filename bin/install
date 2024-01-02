@@ -16,7 +16,7 @@ poetry self update
 echo "Install "
 
 # We use `3.9` explicitly for now.
-poetry -C "$SCRIPT_DIR/.." env use 3.9
+poetry -C "$SCRIPT_DIR/.." env use 3.11
 
 # Ensure we have latest version of dependencies (ie: `zaws` library)
 poetry -C "$SCRIPT_DIR/.." update
