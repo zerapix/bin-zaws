@@ -5,7 +5,7 @@ SCRIPT_DIR=$( cd -P "$( dirname "$(readlink -f "${BASH_SOURCE[0]}" )" )" && pwd 
 echo "Setting use Python 3.11 "
 echo "bin-zaws project path: $SCRIPT_DIR/.."
 
-# We use `3.9` explicitly for now.
+# We use `3.11` explicitly for now.
 poetry -C "$SCRIPT_DIR/.." env use 3.11
 
 # Ensure we are on latest version of poetry
