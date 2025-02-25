@@ -9,10 +9,6 @@ name = "fury"
 url = "https://pypi.fury.io/zerapix"
 priority = "explicit"
 
-[[tool.poetry.source]]
-name = "PyPI"
-priority = "default"
-
 [tool.poetry.dependencies]
 python = "^3.11"
 pip = "*"
