@@ -12,6 +12,9 @@ poetry -C "$SCRIPT_DIR/.." env use 3.11
 echo "Self update poetry..."
 poetry self update
 
+# We need the export plugin
+poetry self add poetry-plugin-export
+
 # Ensure we have latest version of dependencies (ie: `zaws` library)
 poetry -C "$SCRIPT_DIR/.." update
 
