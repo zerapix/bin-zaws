@@ -12,4 +12,4 @@ fi
 
 export ZAWS_BIN_WORKING_DIR_PATH="${SCRIPT_DIR}/.."
 
-poetry -C "${ZAWS_BIN_WORKING_DIR_PATH}" run zaws "$@"
+poetry --project="${ZAWS_BIN_WORKING_DIR_PATH}" run zaws "$@"
